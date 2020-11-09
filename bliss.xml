@@ -23,6 +23,9 @@
           fetch="https://github.com/LineageOS"
           revision="lineage-18.0" />
 
+  <remote name="mine"
+          fetch="https://github.com/spkal01" />
+          
   <!-- Remove first some AOSP repos -->
 
   <remove-project name="platform/art" />
@@ -181,8 +184,8 @@
   <project path="hardware/qcom/power" name="platform_hardware_qcom_power" remote="BlissRoms" />
   <project path="hardware/qcom-caf/sdm845/audio" name="platform_hardware_qcom_audio" remote="BlissRoms" revision="r-caf-sdm845" />
   <project path="hardware/qcom-caf/sdm845/display" name="platform_hardware_qcom_display" remote="BlissRoms" revision="r-caf-sdm845" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="platform_hardware_qcom_audio" remote="BlissRoms" revision="r-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom_display" remote="BlissRoms" revision="r-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="mine" revision="lineage-18.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="mine" revision="lineage-18.0-caf-sm8150" />
 
   <!-- Inputmethods -->
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="BlissRoms" />
@@ -237,4 +240,8 @@
   <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" revision="r" />
   <project path="vendor/gapps" name="BlissRoms/android_vendor_gapps" remote="gitlab" revision="r" />
 
+  <!-- Peronal -->
+  <project path="device/xiaomi/davinci" name="bliss_device_xiaomi_davinci" remote="mine" revision="r" />
+  <project path="vendor/xiaomi/davinci" name="vendor_xiaomi_davinci" remote="mine" revision="r" />
+  <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_davinci" remote="mine" revision="arrow-11.0" />
 </manifest>
