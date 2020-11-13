@@ -244,4 +244,6 @@
   <project path="device/xiaomi/davinci" name="bliss_device_xiaomi_davinci" remote="mine" revision="r" />
   <project path="vendor/xiaomi/davinci" name="vendor_xiaomi_davinci" remote="mine" revision="r" />
   <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_davinci" remote="mine" revision="arrow-11.0" />
+  <project path="prebuilts/clang/host/linux-x86/clang-12.0" name="kdrag0n/proton-clang" remote="github" revesion="master" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-18.0" />
 </manifest>
